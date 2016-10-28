@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+
+<script>
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+    <title>Beemo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#home">Beemo</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#donate">Donate</a></li>
+      </ul>
+      <ul class="nav navbar-right">
+        <div><button type="button" class="btn btn-default navbar-btn" onclick="location.href='#';">Dashboard</button>&nbsp;&nbsp;</div>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="alertalpha">
+    <div class="alert alert-info alert-dismissible" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <strong>Note:</strong> Website is in pre-alpha. There will be bugs.
+    </div>
+  </div>
+
+  <div id="home">
+    <a id="homea" class="smooth"></a>
+      <div id="beemo"><center>
+          <img src="logo.png" width="20%">
+          <h1><b>Beemo</b></h1>
+            <button type="button" class="btn btn-info">
+              <div id="beemobutton">Add to Server!</div>
+            </button>
+            <button type="button" class="btn btn-info">
+              <div id="beemobutton">Join Beemo's HQ!</div>
+            </button>
+      </div></center>
+</div>
+
+
+<a href="#about" class="btn btn-circle page-scroll">
+    <i class="fa fa-angle-double-down animated"></i>
+</a>
+
+<div id="navbarfix"></div>
+<div id="donate">
+  <a id="donatea" class="smooth"></a>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a tincidunt nibh. Morbi non arcu dignissim, euismod lorem eu, pharetra nunc. Suspendisse potenti. Integer rhoncus augue ac ligula aliquet, non pellentesque neque scelerisque. Vivamus a purus magna. In in libero vel sem fringilla sagittis ac sit amet nulla. Nulla facilisi. Praesent nulla tellus, suscipit eu imperdiet quis, pretium sit amet felis. Cras eu blandit turpis. Ut condimentum quis metus eget interdum. Curabitur malesuada bibendum viverra. Nunc nec risus sit amet orci rhoncus faucibus. Etiam eget sollicitudin ligula.
+
+  Morbi imperdiet fringilla nulla, eu rutrum felis suscipit vel. Aliquam aliquet vitae libero sed tempor. Donec ullamcorper gravida mi id condimentum. Donec eu porttitor risus. Vivamus facilisis quam in ultricies pulvinar. Ut porttitor eleifend arcu, vitae dictum libero volutpat in. In felis ipsum, scelerisque nec velit vel, tincidunt tristique massa. Aliquam massa mauris, aliquet id molestie a, suscipit tempor lacus. Morbi tempor molestie rutrum. Pellentesque non volutpat tortor. Etiam elementum rhoncus euismod. Vestibulum finibus nisl et ante porttitor laoreet. Proin malesuada suscipit lacus, sed tempus ante molestie vel. Nunc ut metus libero. Curabitur efficitur ut ligula nec venenatis.
+
+  Integer elementum hendrerit arcu eu viverra. Cras ac nulla orci. Mauris ac commodo augue. Praesent et libero metus. Proin congue augue ut orci mollis, ac molestie ante posuere. Fusce sed nisi vel ex ultrices malesuada a sit amet arcu. Donec vitae nulla nisi. In vel quam viverra, posuere turpis a, facilisis leo. Fusce dignissim diam metus, vitae suscipit dui condimentum vitae. Nam rhoncus purus vitae arcu elementum sollicitudin. Aliquam et neque est. Donec commodo, ligula quis posuere dignissim, mi nisi blandit odio, eu interdum nisl tortor sed dolor. Nullam odio ex, tincidunt sit amet consequat in, vulputate quis dui.
+
+  Morbi suscipit tempus velit, ut tincidunt augue tempor ac. Fusce nec augue pharetra, vehicula justo blandit, ultrices elit. Suspendisse euismod justo quis metus bibendum posuere. Vestibulum rutrum, arcu et dictum iaculis, elit dolor accumsan ligula, sit amet aliquam sapien mi id quam. Donec volutpat aliquam fringilla. Duis mattis tellus eu fermentum facilisis. Quisque rutrum pellentesque sem ut lacinia. Aenean eget sapien a nisi pulvinar posuere. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam imperdiet congue ligula eget eleifend. Donec interdum mauris quis sodales vestibulum.
+
+  Praesent dapibus ultricies sapien sed vehicula. Cras id faucibus diam. Sed dolor dolor, suscipit quis dolor nec, posuere mollis orci. Cras consectetur nunc turpis, eget consectetur ante dictum at. Vivamus euismod libero ante, ut dapibus enim mollis eget. Integer tincidunt, ex sed dapibus vehicula, metus sapien vulputate justo, sollicitudin ornare eros massa eget felis. Duis varius nunc purus, non efficitur nunc hendrerit ac. Quisque mi ipsum, fermentum at vestibulum eget, aliquam sit amet dolor. Fusce sed dignissim massa. Sed sit amet felis varius, fermentum leo sit amet, tincidunt diam. Vivamus placerat id nibh vitae commodo. Morbi in ligula eu augue mattis varius. Duis cursus nibh et est efficitur, et efficitur augue egestas. Maecenas tristique risus sit amet sem finibus aliquet. Sed ac libero eget sapien vestibulum lacinia a vel lacus. Mauris eget sapien porttitor, molestie metus nec, sagittis dui.
+</div>
+
+<div id="join">
+  <a id="joina" class="smooth"></a>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a tincidunt nibh. Morbi non arcu dignissim, euismod lorem eu, pharetra nunc. Suspendisse potenti. Integer rhoncus augue ac ligula aliquet, non pellentesque neque scelerisque. Vivamus a purus magna. In in libero vel sem fringilla sagittis ac sit amet nulla. Nulla facilisi. Praesent nulla tellus, suscipit eu imperdiet quis, pretium sit amet felis. Cras eu blandit turpis. Ut condimentum quis metus eget interdum. Curabitur malesuada bibendum viverra. Nunc nec risus sit amet orci rhoncus faucibus. Etiam eget sollicitudin ligula.
+
+  Morbi imperdiet fringilla nulla, eu rutrum felis suscipit vel. Aliquam aliquet vitae libero sed tempor. Donec ullamcorper gravida mi id condimentum. Donec eu porttitor risus. Vivamus facilisis quam in ultricies pulvinar. Ut porttitor eleifend arcu, vitae dictum libero volutpat in. In felis ipsum, scelerisque nec velit vel, tincidunt tristique massa. Aliquam massa mauris, aliquet id molestie a, suscipit tempor lacus. Morbi tempor molestie rutrum. Pellentesque non volutpat tortor. Etiam elementum rhoncus euismod. Vestibulum finibus nisl et ante porttitor laoreet. Proin malesuada suscipit lacus, sed tempus ante molestie vel. Nunc ut metus libero. Curabitur efficitur ut ligula nec venenatis.
+
+  Integer elementum hendrerit arcu eu viverra. Cras ac nulla orci. Mauris ac commodo augue. Praesent et libero metus. Proin congue augue ut orci mollis, ac molestie ante posuere. Fusce sed nisi vel ex ultrices malesuada a sit amet arcu. Donec vitae nulla nisi. In vel quam viverra, posuere turpis a, facilisis leo. Fusce dignissim diam metus, vitae suscipit dui condimentum vitae. Nam rhoncus purus vitae arcu elementum sollicitudin. Aliquam et neque est. Donec commodo, ligula quis posuere dignissim, mi nisi blandit odio, eu interdum nisl tortor sed dolor. Nullam odio ex, tincidunt sit amet consequat in, vulputate quis dui.
+
+  Morbi suscipit tempus velit, ut tincidunt augue tempor ac. Fusce nec augue pharetra, vehicula justo blandit, ultrices elit. Suspendisse euismod justo quis metus bibendum posuere. Vestibulum rutrum, arcu et dictum iaculis, elit dolor accumsan ligula, sit amet aliquam sapien mi id quam. Donec volutpat aliquam fringilla. Duis mattis tellus eu fermentum facilisis. Quisque rutrum pellentesque sem ut lacinia. Aenean eget sapien a nisi pulvinar posuere. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam imperdiet congue ligula eget eleifend. Donec interdum mauris quis sodales vestibulum.
+
+  Praesent dapibus ultricies sapien sed vehicula. Cras id faucibus diam. Sed dolor dolor, suscipit quis dolor nec, posuere mollis orci. Cras consectetur nunc turpis, eget consectetur ante dictum at. Vivamus euismod libero ante, ut dapibus enim mollis eget. Integer tincidunt, ex sed dapibus vehicula, metus sapien vulputate justo, sollicitudin ornare eros massa eget felis. Duis varius nunc purus, non efficitur nunc hendrerit ac. Quisque mi ipsum, fermentum at vestibulum eget, aliquam sit amet dolor. Fusce sed dignissim massa. Sed sit amet felis varius, fermentum leo sit amet, tincidunt diam. Vivamus placerat id nibh vitae commodo. Morbi in ligula eu augue mattis varius. Duis cursus nibh et est efficitur, et efficitur augue egestas. Maecenas tristique risus sit amet sem finibus aliquet. Sed ac libero eget sapien vestibulum lacinia a vel lacus. Mauris eget sapien porttitor, molestie metus nec, sagittis dui.
+</div>
+
+</body>
+</html>
