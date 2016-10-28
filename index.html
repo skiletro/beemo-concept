@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1d7233">
+<meta name="theme-color" content="#a1d5b1">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
-
 <script>
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
@@ -32,14 +37,17 @@ $(function() {
 </head>
 
 <body>
+
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#home">Beemo</a>
+        <a class="navbar-brand" href="#hometop">
+<img alt="Beemo" src="logoface.png" width="40px"></img>
+        </a>
       </div>
       <ul class="nav navbar-nav">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#donate">Donate</a></li>
+        <li><a href="#hometop">Home</a></li>
+        <li><a href="#donate1">Donate</a></li>
       </ul>
       <ul class="nav navbar-right">
         <div><button type="button" class="btn btn-default navbar-btn" onclick="location.href='#';">Dashboard</button>&nbsp;&nbsp;</div>
@@ -47,33 +55,33 @@ $(function() {
     </div>
   </nav>
 
+<div id="hometop"></div>
+
   <div id="alertalpha">
     <div class="alert alert-info alert-dismissible" role="alert">
       <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       <strong>Note:</strong> Website is in pre-alpha. There will be bugs.
     </div>
   </div>
-
   <div id="home">
     <a id="homea" class="smooth"></a>
       <div id="beemo"><center>
           <img src="logo.png" width="20%">
           <h1><b>Beemo</b></h1>
-            <button type="button" class="btn btn-info">
+            <button type="button" class="btn btn-info" onClick="location.href='https://discordapp.com/oauth2/authorize?client_id=228537642583588864&scope=bot&permissions=8'">
               <div id="beemobutton">Add to Server!</div>
             </button>
-            <button type="button" class="btn btn-info">
+            <button type="button" class="btn btn-info" onclick="location.href='https://discord.gg/VzbRGWF';">
               <div id="beemobutton">Join Beemo's HQ!</div>
             </button>
       </div></center>
 </div>
 
-
 <a href="#about" class="btn btn-circle page-scroll">
     <i class="fa fa-angle-double-down animated"></i>
 </a>
 
-<div id="navbarfix"></div>
+<div id="donate1"></div>
 <div id="donate">
   <a id="donatea" class="smooth"></a>
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a tincidunt nibh. Morbi non arcu dignissim, euismod lorem eu, pharetra nunc. Suspendisse potenti. Integer rhoncus augue ac ligula aliquet, non pellentesque neque scelerisque. Vivamus a purus magna. In in libero vel sem fringilla sagittis ac sit amet nulla. Nulla facilisi. Praesent nulla tellus, suscipit eu imperdiet quis, pretium sit amet felis. Cras eu blandit turpis. Ut condimentum quis metus eget interdum. Curabitur malesuada bibendum viverra. Nunc nec risus sit amet orci rhoncus faucibus. Etiam eget sollicitudin ligula.
