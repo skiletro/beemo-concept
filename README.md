@@ -1,6 +1,5 @@
 # Beemo.Club Website Concept
 A website concept created by me.
 
-http://beemo.club
-itslukej
-Beemo
+#Want to view it live?
+http://skiletro.com/beemo-concept
